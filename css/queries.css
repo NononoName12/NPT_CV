@@ -1,0 +1,114 @@
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+
+@media (max-width: 1200px) {
+  .grid-2-col {
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+    max-width: 840px;
+    margin: auto;
+  }
+  .grid-2-col::before {
+    display: none;
+  }
+  #certificate .right {
+    display: flex;
+    justify-content: start;
+    margin-left: 20px;
+    padding-left: 0;
+  }
+}
+
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+
+@media (max-width: 894px) {
+  .grid-3col {
+    max-width: 800px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: start;
+    margin: auto;
+  }
+  .contai-img {
+    height: auto;
+  }
+}
+
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 610px) {
+  .grid-3col {
+    max-width: 800px;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    align-items: start;
+    #banner img {
+      object-fit: cover;
+      object-position: 0 0;
+      width: 100%;
+      height: auto;
+      position: relative;
+      filter: brightness(0.5);
+      opacity: 0.9;
+    }
+    margin: auto;
+  }
+  .fflex a {
+    font-size: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    padding: 5px 5px;
+    border: 1px solid #f7f7f7;
+  }
+  #nav-bar div {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+    font-size: 15px;
+    width: 125px;
+  }
+  #banner img {
+    object-fit: cover;
+    object-position: 0 0;
+    width: 100%;
+    height: auto;
+    position: relative;
+    filter: brightness(0.5);
+    opacity: 0.9;
+  }
+  .list li p::after {
+    top: 24%;
+    left: 3%;
+  }
+  .list .joninfor-list::before {
+    top: 54%;
+    left: 3%;
+  }
+  .list .joninfor-list::after {
+    top: 74%;
+    left: 3%;
+  }
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 540px) {
+  .fflex a {
+    font-size: 8px;
+  }
+  .grid-2col {
+    grid-template-columns: 1fr;
+  }
+  .name {
+    font-size: 10px;
+  }
+}
